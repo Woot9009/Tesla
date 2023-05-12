@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/redlogo.ico" />
+    <link href="fonta/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/hamburgers-spin.css">
+    <link rel="stylesheet" href="css/tesla.css" />
+    <title>Tesla</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/hamburgers.js"></script>
+    <script src="js/tesla.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <a class="logo" href="index.html"><img class="logoText" src="images/logo1.png" alt="logo" /><img class="logoMark" src="images/logo2.png" alt="logo" /></a>
+        <div class="hamburger hamburger--spin">
+          <span>Shop</span>
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+        <ul id="gnb">
+          <li><a href="#">Model S</a></li>
+          <li><a href="#">Model 3</a></li>
+          <li><a href="#">Model X</a></li>
+          <li><a href="#">Model Y</a></li>
+          <li><a href="#">Cybertruck</a></li>
+          <li><a href="#">Powerwall</a></li>
+        </ul>
+
+        <ul id="lnb">
+          <li><a href="#"><i class="fa-regular fa-user"></i></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+        </ul>
+      </header>
+      <!-- header 끝 -->
+
+      <section>
+        <div id="main">
+          <video autoplay muted loop id="mainVideo">
+            <source src="videos/main.mp4" />
+          </video>
+          <p>
+            <img src="images/cybertrucklogo.png" />
+            BETTER UTILITY THAN A TRUCK WITH MORE PERFORMANCE THAN A SPORTS CAR
+          </p>
+          <a class="order" href="#">Order Now</a>
+          <a class="orderResize" href="#">Order Now</a>
+        </div>
+        <div id="mobileMain">
+          <div>
+            <span>
+              <a href="#"><i class="fa-solid fa-calculator"></i><br />Estimate</a>
+            </span>
+            <span>
+              <a href="#"><i class="fa-solid fa-car"></i><br />Demo-Drive</a>
+            </span>
+            <span>
+              <a href="#"><i class="fa-regular fa-file-lines"></i><br />Catalog</a>
+            </span>
+          </div>
+        </div>
+        <!-- main 끝 -->
+
+        <div id="contents">
+          <table id="products">
+            <!--셀크기 620*269-->
+            <tr>
+              <td>
+                <div class="card">
+                  <div class="front">
+                    <img src="images/models.jpg" alt="models" />
+                  </div>
+                  <div class="back">
+                    <p>cinnematic experience</p>
+                    <video autoplay muted loop class="specVideo">
+                      <source src="videos/cinnematic experience.mp4" />
+                    </video>
+                  </div>
+                </div>
+                <span>Model S</span>
+              </td>
+              <td>
+                <div class="card">
+                  <div class="front">
+                    <img src="images/model3.jpg" alt="model3" />
+                  </div>
+                  <div class="back">
+                    <p>console-grade gaming</p>
+                    <video autoplay muted loop class="specVideo">
+                      <source src="videos/console-grade gaming.mp4" />
+                    </video>
+                  </div>
+                </div>
+                <span>Model 3</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="card">
+                  <div class="front">
+                    <img src="images/modelx.jpg" alt="modelx" />
+                  </div>
+                  <div class="back">
+                    <p>yoke steering</p>
+                    <video autoplay muted loop class="specVideo">
+                      <source src="videos/yoke steering.mp4" />
+                    </video>
+                  </div>
+                </div>
+                <span>Model X</span>
+              </td>
+              <td>
+                <div class="card">
+                  <div class="front">
+                    <img src="images/modely.jpg" alt="modely" />
+                  </div>
+                  <div class="back">
+                    <p>perfect environment</p>
+                    <video autoplay muted loop class="specVideo">
+                      <source src="videos/perfect environment.mp4" />
+                    </video>
+                  </div>
+                </div>
+                <span>Model Y</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="fadeInOut">
+                  <div class="topLayer">
+                    <img src="images/cybertruck.jpg" alt="cybertruck" />
+                  </div>
+                  <div class="bottomLayer">
+                    <img src="images/cybertruck detail1.jpg" alt="cybertruck detail1" />
+                    <img src="images/cybertruck detail2.jpg" alt="cybertruck detail2" />
+                    <img src="images/cybertruck detail3.jpg" alt="cybertruck detail3" />
+                    <img src="images/cybertruck detail4.jpg" alt="cybertruck detail4" />
+                  </div>
+                </div>
+                <span id="showTrigger">Cybertruck</span>
+              </td>
+              <td>
+                <div class="fadeInOut">
+                  <div class="topLayer">
+                    <img src="images/powerwall.jpg" alt="powerwall" />
+                  </div>
+                  <div class="bottomLayer">
+                    <p>use your stored energy<br />day or night</p>
+                    <video autoplay muted loop class="specVideo">
+                      <source src="videos/use your stored energy day or night.mp4" />
+                    </video>
+                  </div>
+                </div>
+                <span>Powerwall</span>
+              </td>
+            </tr>
+          </table>
+
+          <div id="products2">
+            <ul>
+              <li><img src="images/models.jpg" alt="models"><p>Model S</p></li>
+              <li><img src="images/model3.jpg" alt="model3"><p>Model 3</p></li>
+              <li><img src="images/modelx.jpg" alt="modelx"><p>Model X</p></li>
+              <li><img src="images/modely.jpg" alt="modely"><p>Model Y</p></li>
+              <li><img src="images/cybertruck.jpg" alt="cybertruck"><p>Cybertruck</p></li>
+              <li><img src="images/powerwall.jpg" alt="powerwall"><p>Powerwall</p></li>
+            </ul>
+          </div>
+
+          <table id="customer">
+            <tr>
+              <td>
+                <a href="#"><i class="fa-solid fa-calculator"></i><br />Estimate</a>
+              </td>
+              <td>
+                <a href="#"><i class="fa-solid fa-car"></i><br />Demo-Drive</a>
+              </td>
+              <td>
+                <a href="#"><i class="fa-regular fa-file-lines"></i><br />Catalog</a>
+              </td>
+            </tr>
+          </table>
+
+          <article>
+            <div class="guide">
+              <h3>Video Guides</h3>
+              <p>
+                <a href="#">View the latest Video Guides</a>
+                <span><br /><br />Designed to educate you on product features. Learn about all your vehicle and energy products.</span>
+              </p>
+            </div>
+            <div class="support">
+              <h3>Getting Started</h3>
+              <ul>
+                <li><a href="#">Ordering a New Tesla</a></li>
+                <li><a href="#">Ordering a Used Tesla</a></li>
+                <li><a href="#">Prepare for Delivery Day</a></li>
+                <li><a href="#">What to Expect on Delivery Day</a></li>
+                <li><a href="#">After Taking Delivery</a></li>
+              </ul>
+            </div>
+            <div id="map">
+              <h3>Find Us</h3>
+              <iframe class="hover" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d92917.67327162634!2d127.04251012328744!3d37.47294100644025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTesla!5e0!3m2!1sko!2skr!4v1682829779799!5m2!1sko!2skr" width="200" height="150" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe class="basicMap" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d92917.67327162634!2d127.04251012328744!3d37.47294100644025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTesla!5e0!3m2!1sko!2skr!4v1682829779799!5m2!1sko!2skr" width="200" height="150" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </article>
+        </div>
+        <!-- contents 끝 -->
+      </section>
+      <!-- section 끝 -->
+
+      <footer>
+        <ul>
+          <li><a href="#">Tesla ⓒ 2023</a></li>
+          <li><a href="#">Privacy&Legal</a></li>
+          <li><a href="#">Vehicle Recalls</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Engage</a></li>
+          <li><a href="#">Locations</a></li>
+        </ul>
+      </footer>
+      <!-- footer 끝 -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,561 @@
+﻿@charset "utf-8";
+
+body {
+  background: black;
+  color: white;
+}
+#wrapper {
+  width: 1240px;
+  margin: 0 auto;
+}
+li {
+  display: inline;
+}
+td a {
+  color: white;
+}
+
+header {
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  background: white;
+  color: black;
+}
+.logo {
+  margin: 0 50px 0 20px;
+}
+.logoMark {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+#gnb {
+  display: inline;
+}
+#gnb li {
+  margin: 0 -1px;
+  font-weight: bold;
+}
+#gnb li a {
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+#gnb li a:hover {
+  background: #323232;
+  color: #fff;
+}
+#lnb {
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+#lnb li a {
+  padding: 5px 10px;
+  border-radius: 20%;
+  transition: 0.2s;
+}
+#lnb li a:hover {
+  background: #505050;
+  color: #fff;
+}
+
+#main {
+  position: relative;
+  width: 1240px;
+  height: 620px;
+}
+#main p {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+}
+.order {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  width: 130px;
+  height: 40px;
+  padding: 3px 16px;
+  border: 5px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.order:hover,
+.orderResize:hover {
+  opacity: 0.2;
+}
+.orderResize {
+  display: none;
+  width: 100px;
+  height: 30px;
+  line-height: 25px;
+  border: 3px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+}
+#mobileMain {
+  display: none;
+}
+
+#products img {
+  width: 620px;
+  height: 269px;
+}
+#products video {
+  width: 620px;
+  height: 269px;
+  object-fit: fill;
+}
+#products tr {
+  perspective: 1000px;
+}
+.card {
+  position: relative;
+  width: 620px;
+  height: 269px;
+  cursor: pointer;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+.card.flip {
+  transform: rotateY(180deg);
+}
+.front,
+.back {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+.back {
+  transform: rotateY(180deg);
+}
+.back p {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: capitalize;
+  opacity: 0.7;
+}
+.back video {
+  width: 620px;
+  height: 269px;
+  object-fit: fill;
+}
+
+.fadeInOut {
+  position: relative;
+  width: 620px;
+  height: 269px;
+  cursor: pointer;
+}
+.topLayer {
+  z-index: 6000;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.bottomLayer p {
+  z-index: 5000;
+  position: absolute;
+  right: 10px;
+  bottom: 18px;
+  color: #505050;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+  text-transform: capitalize;
+  text-shadow: 0px 0px 1px #d2d2d2;
+}
+.bottomLayer img {
+  display: none;
+}
+.bottomLayer img,
+.bottomLayer video {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.card + span,
+.fadeInOut + span {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#products2:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+#products2 li {
+  float: left;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#products2 li p {
+  font-weight: bold;
+  text-align: center;
+}
+
+#customer {
+  margin: 150px auto;
+}
+#customer tr {
+  font-size: 20px;
+}
+#customer tr td {
+  padding: 0 20px;
+}
+#customer tr td i {
+  font-size: 40px;
+}
+#customer tr td a {
+  display: block;
+  padding: 10px;
+  transition: 0.1s;
+}
+#customer tr td a:hover {
+  color: #d2d2d2;
+  transform: scale(1.1);
+}
+
+article {
+  width: 1200px;
+  margin: 100px auto;
+}
+article:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+article div {
+  float: left;
+  padding: 10px;
+}
+article div a {
+  color: white;
+}
+.guide {
+  width: 460px;
+  height: 180px;
+  background: url(../images/guide.jpg) no-repeat 10px bottom;
+}
+.guide p {
+  margin: 15px 10px 0 210px;
+  text-align: justify;
+}
+.guide p a:hover {
+  color: skyblue;
+}
+.guide p span {
+  font-size: 12px;
+  text-align: justify;
+}
+.support {
+  width: 460px;
+  height: 180px;
+  background: url(../images/cars.jpg) no-repeat 10px bottom;
+}
+.support ul {
+  height: 180px;
+  margin: 15px 0 0 210px;
+}
+.support li {
+  display: block;
+  margin: 10px 0;
+}
+.support li a {
+  color: white;
+}
+.support li a:hover {
+  color: skyblue;
+}
+#map {
+  position: relative;
+  width: 200px;
+}
+iframe.hover {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  border-radius: 5px;
+}
+iframe.basicMap {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  border-radius: 5px;
+}
+
+footer {
+  margin: 200px 0 50px;
+  text-align: center;
+}
+footer ul li {
+  margin: 5px;
+}
+footer ul li a {
+  color: #fff;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+@media all and (max-width: 767px) {
+  #wrapper {
+    width: 100%;
+    min-width: 310px;
+  }
+  .header {
+    height: 30px;
+    line-height: 30px;
+  }
+  .logoText {
+    display: none;
+  }
+  .logoMark {
+    display: inline-block;
+    width: auto;
+    height: 90%;
+  }
+  .hamburger {
+    display: inline-block;
+    position: absolute;
+    right: 140px;
+    top: 2px;
+  }
+  .hamburger span {
+    position: relative;
+    top: -3px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #gnb {
+    display: none;
+    background-color: #fff;
+  }
+  #gnb li {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+  }
+  #gnb li a {
+    padding: 3px;
+  }
+
+  #main,
+  #customer {
+    display: none;
+  }
+  #mobileMain {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 180px;
+    box-sizing: border-box;
+  }
+  #mobileMain div {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    min-width: 300px;
+    height: 80px;
+    margin-top: -40px;
+    text-align: center;
+  }
+  #mobileMain span {
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+  }
+  #mobileMain span:nth-of-type(2) {
+    margin: 0 13px;
+  }
+  #mobileMain a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  #mobileMain i {
+    font-size: 50px;
+  }
+
+  #products {
+    display: none;
+  }
+  #products2 {
+    display: block;
+  }
+  #products2 li {
+    width: 50%;
+  }
+
+  article {
+    width: 90%;
+    text-align: right;
+  }
+  .guide,
+  .support {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background: none;
+    box-sizing: border-box;
+  }
+  .guide p,
+  .support ul {
+    margin: 0;
+  }
+  .guide p {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  .guide a,
+  .support a {
+    font-size: 14px;
+  }
+  .guide span {
+    display: none;
+  }
+  article h3 {
+    font-size: 18px;
+  }
+  #map {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  iframe.hover {
+    display: none;
+  }
+  iframe.basicMap {
+    display: block;
+    width: 97%;
+    height: 200px;
+  }
+
+  footer {
+    margin: 250px 0 50px;
+  }
+  footer ul li:nth-of-type(1) {
+    display: block;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  #wrapper {
+    width: 90%;
+    min-width: 700px;
+  }
+  header {
+    height: 40px;
+    line-height: 40px;
+  }
+  .logo {
+    margin: 0 10px;
+  }
+  .logoText {
+    width: 90px;
+    height: auto;
+  }
+  #gnb li a {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+  #lnb {
+    right: 3px;
+  }
+  #lnb li {
+    margin: 0 -1px;
+  }
+  #lnb li a {
+    padding: 3px 5px;
+  }
+
+  #main {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  #mainVideo {
+    width: 100%;
+    height: auto;
+  }
+  #main p {
+    font-size: 0;
+  }
+  #main p img {
+    width: 120px;
+    height: auto;
+  }
+  .order {
+    display: none;
+  }
+  .orderResize {
+    display: block;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+  }
+
+  #products {
+    display: none;
+  }
+  #products2 {
+    display: block;
+  }
+  #products2 li {
+    width: 100%;
+  }
+
+  article {
+    width: 100%;
+  }
+  article div {
+    float: none;
+  }
+  #map {
+    width: 100%;
+    margin: 0 auto;
+  }
+  iframe.hover {
+    display: none;
+  }
+  iframe.basicMap {
+    display: block;
+    width: 90%;
+    height: 300px;
+  }
+
+  footer {
+    margin: 350px 0 50px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  #lnb li a {
+    font-size: 24px;
+  }
+  #products {
+    margin: 150px auto;
+  }
+  #products2 {
+    display: none;
+  }
+}
