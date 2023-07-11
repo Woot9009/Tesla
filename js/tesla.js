@@ -13,7 +13,6 @@ $(function(){
         }else{
             $(".order").animate({left:e.pageX-posXofMain-60, top:cursorY-65},1);
         }
-        //}
     });
     $("#main").mouseleave(function(){
             $(".order").stop().animate({left:1100, top:560});
