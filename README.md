@@ -1,2 +1,3 @@
-# Tesla
-[Tesla 반응형웹 바로가기](https://woot9009.github.io/Tesla/)
+# Tesla 반응형웹
+
+[Tesla 반응형웹 바로가기](https://woot9009.github.io/Tesla/){:target="_blank"}
