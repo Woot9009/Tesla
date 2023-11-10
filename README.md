@@ -10,6 +10,18 @@
 - 태블릿과 모마일 사이즈에서는 애니메이션을 간소화하고 메뉴 및 아이콘의 배치를 사용환경에 맞게 재구성했습니다.
 
 <br/><br/>
+###### PC 웹
+<img src="https://github.com/Woot9009/Tesla/assets/128044785/b6f3d5b4-450e-4993-917b-c6652f9836a8.png" width=50% height=auto/>
+
+<br/><br/>
+###### 태블릿
+<img src="https://github.com/Woot9009/Tesla/assets/128044785/07400fd6-d426-40ce-a6f9-5a4d5c2615c5.png" width=50% height=auto/>
+
+<br/><br/>
+###### 모바일
+<img src="https://github.com/Woot9009/Tesla/assets/128044785/916c5b2c-780a-4b03-97e0-0f7a8c9b093a.png" width=50% height=auto/>
+
+<br/><br/>
 
 ### <만들며 어려웠던 점과 해결방법>
 <br/>
